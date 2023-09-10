@@ -59,6 +59,7 @@ namespace GestionBanque.Models
                 else 
                     Console.WriteLine("Solde insuffisant");
             }
+
         }
 
         public void Depot(double Montant)

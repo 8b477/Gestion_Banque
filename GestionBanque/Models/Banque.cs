@@ -24,10 +24,12 @@ namespace GestionBanque.Models
             persons.Remove(c.Numero);
         }
 
-        public Courant? this[string name] {
+
+        // Création de mon indexeur perso, sur base numéro du compte courant
+        public Courant? this[string courantNumber] {
             get
             {
-                 return persons.TryGetValue(name, out Courant? c) ? c : null;
+                 return persons.TryGetValue(courantNumber, out Courant? c) ? c : null;
             }
         }
     }
